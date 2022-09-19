@@ -60,10 +60,12 @@
   border-radius: 50%;
   background: var(--secondary);
   color: var(--white);
+  transition: 300ms ease-in-out;
 }
 
 .bookmark:hover {
   cursor: pointer;
+  background: var(--secondary-light);
 }
 
 .bookmark--active {

@@ -16,10 +16,11 @@
   display: block;
   margin: 0 auto 2rem auto;
   padding: 1rem;
+  transition: 300ms ease-in-out;
 }
 
 .card__button-answer:hover {
-  opacity: 0.75;
+  background: var(--secondary-light);
   cursor: pointer;
 }
 
@@ -74,5 +75,5 @@
 
 .bookmark__icon {
   fill: currentcolor;
-  width: 2em;
+  width: 1.8em;
 }

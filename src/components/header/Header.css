@@ -1,0 +1,15 @@
+.header {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 0;
+  background: #f7f7f7;
+  border-bottom: 1px solid black;
+}
+
+.header__title {
+  margin: 0;
+  text-align: center;
+}

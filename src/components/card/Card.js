@@ -1,22 +1,22 @@
 import "./Card.css";
-import "./Bookmark.css";
+import "../bookmark/Bookmark.css";
 
-function Card() {
+function Card({ question, answer, tags }) {
   return (
     <article className="card">
       <h2 className="card__question" data-js="card-question">
-        Question
+        {question}
       </h2>
       <button className="card__button-answer" type="button">
         Show answer
       </button>
       <p className="card__answer" data-js="card-answer">
-        Answer
+        {answer}
       </p>
       <ul className="card__tag-list">
-        <li className="card__tag-list-item">#Tag1</li>
-        <li className="card__tag-list-item">#Tag2</li>
-        <li className="card__tag-list-item">#Tag3</li>
+        {tags.map((tag) => (
+          <li key={tag} className="card__tag-list-item">{tag}</li>
+        ))}
       </ul>
       <div className="card__button-bookmark">
         <button

@@ -54,3 +54,6 @@
   padding: 0 5px;
 }
 
+.card__tag-list-item::before {
+  content: "#";
+}

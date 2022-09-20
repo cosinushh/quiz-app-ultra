@@ -1,4 +1,8 @@
-.card-list {
+.app {
+  text-align: center;
+}
+
+.app__main {
   display: grid;
   gap: 3rem;
   padding: 10rem 2rem 10rem 2rem;

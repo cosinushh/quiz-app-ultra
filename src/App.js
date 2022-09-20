@@ -5,9 +5,9 @@ import Navigation from "./components/navigation/Navigation";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Header />
-      <main className="card-list" data-js="card-list">
+      <main className="app__main" data-js="card-list">
         <Card />
         <Card />
         <Card />

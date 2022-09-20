@@ -1,4 +1,5 @@
 import "./Card.css";
+import "./Bookmark.css";
 
 function Card() {
   return (

@@ -54,26 +54,3 @@
   padding: 0 5px;
 }
 
-.bookmark {
-  border: none;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background: var(--secondary);
-  color: var(--white);
-  transition: 300ms ease-in-out;
-}
-
-.bookmark:hover {
-  cursor: pointer;
-  background: var(--secondary-light);
-}
-
-.bookmark--active {
-  color: var(--black);
-}
-
-.bookmark__icon {
-  fill: currentcolor;
-  width: 1.8em;
-}

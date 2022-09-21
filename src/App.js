@@ -38,22 +38,6 @@ function App() {
         {cards.map(({ id, question, answer, tags }) => (
           <Card key={id} question={question} answer={answer} tags={tags} />
         ))}
-        {/* 
-        <Card
-          question="First question"
-          answer="First answer"
-          tags={["firstTag1", "firstTag2", "firstTag3"]}
-        ></Card>
-        <Card
-          question="Second question"
-          answer="Second answer"
-          tags={["secondTag1", "secondTag2", "secondTag3"]}
-        ></Card>
-        <Card
-          question="Third question"
-          answer="Third answer"
-          tags={["thirdTag1", "thirdTag2"]}
-        ></Card> */}
       </main>
       <Navigation />
     </div>

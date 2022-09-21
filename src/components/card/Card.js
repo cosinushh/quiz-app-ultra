@@ -1,21 +1,34 @@
+import { useState } from "react";
 import "./Card.css";
 import "../bookmark/Bookmark.css";
 
 function Card({ question, answer, tags }) {
+  const [answerState, setAnswerState] = useState(false);
+
   return (
     <article className="card">
       <h2 className="card__question" data-js="card-question">
         {question}
       </h2>
-      <button className="card__button-answer" type="button">
-        Show answer
+      <button
+        onClick={() =>
+          setAnswerState((previousAnswerState) => !previousAnswerState)
+        }
+        className="card__button-answer"
+        type="button"
+      >
+        {answerState ? "Hide answer" : "Show answer"}
       </button>
-      <p className="card__answer" data-js="card-answer">
-        {answer}
-      </p>
+      {answerState && (
+        <p className="card__answer" data-js="card-answer">
+          {answer}
+        </p>
+      )}
       <ul className="card__tag-list">
         {tags.map((tag) => (
-          <li key={tag} className="card__tag-list-item">{tag}</li>
+          <li key={tag} className="card__tag-list-item">
+            {tag}
+          </li>
         ))}
       </ul>
       <div className="card__button-bookmark">

@@ -1,7 +1,7 @@
 import "./Card.css";
 import "../bookmark/Bookmark.css";
 
-function Card({ question, answer, tags }) {
+function Card({ question }) {
   return (
     <article className="card">
       <h2 className="card__question" data-js="card-question">
@@ -11,12 +11,12 @@ function Card({ question, answer, tags }) {
         Show answer
       </button>
       <p className="card__answer" data-js="card-answer">
-        {answer}
+        {/* {answer} */} answer
       </p>
       <ul className="card__tag-list">
-        {tags.map((tag) => (
+        {/* {tags.map((tag) => (
           <li key={tag} className="card__tag-list-item">{tag}</li>
-        ))}
+        ))} */}
       </ul>
       <div className="card__button-bookmark">
         <button

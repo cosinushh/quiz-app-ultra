@@ -9,3 +9,9 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+/* const response = fetch(
+  "https://quizapi.io/api/v1/questions?apiKey=8odWMCvYZBI2tAdJlm1xu0wojzJTPKLi0fZGiJlR&category=code&limit=10&tags=HTML"
+);
+const data = response.then((response) => response.json());
+data.then((data) => console.log(data)); */
